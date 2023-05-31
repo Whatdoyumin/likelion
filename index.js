@@ -70,6 +70,6 @@ function shareURL() {
 
 function shareMessage() {
     Kakao.Share.sendScrap({
-        requestUrl: 'https://developers.kakao.com',
+        requestUrl: 'https://steady-selkie-1af84e.netlify.app',
     });
 }
