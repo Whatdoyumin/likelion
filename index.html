@@ -27,11 +27,23 @@
           console.log(Kakao.isInitialized());
         </script>
 
-    <meta property="og:title" content="아기사자 MBTI 테스트">
-    <meta property="og:website" content="website">
-    <meta property="og:image" content="./img/ENFJ.png">
-    <meta property="og:description" content="나는 어떤 유형의 아기사자일까요?🦁 MBTI 기반으로 알아보는 아기사자 테스트를 해보아요!">
+    <a id="kakaotalk-sharing-btn" href="javascript:shareMessage()">
+        <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+        alt="카카오톡 공유 보내기 버튼" />
+    </a>
     
+    <script>
+        function shareMessage() {
+        Kakao.Share.sendCustom({
+            templateId: 94476,
+            templateArgs: {
+            title: '아기사자 MBTI 테스트',
+            description: '바라만 봐나는 어떤 유형의 아기사자일까요?🦁 MBTI 기반 테스트로 당장 알아봅시다!',
+            },
+        });
+        }
+    </script>
+   
 </head>
 <body>
     
